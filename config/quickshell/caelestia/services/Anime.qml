@@ -146,7 +146,7 @@ Singleton {
     Process {
         id: serverProcess
         command: [Quickshell.env("HOME") + "/ani-env/bin/python3",
-            Quickshell.env("HOME") + "/.config/quickshell/scripts/anime_server.py"]
+            Quickshell.env("HOME") + "/.config/quickshell/caelestia/scripts/anime_server.py"]
         running: true
         onExited: (code) => {
             console.warn("[ServiceAnime] Server exited with code", code, "— restarting")
